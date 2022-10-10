@@ -164,7 +164,7 @@ def plotGaussian(X,y,mu,sigma):
         classIdx = y==label
         Xclass = X[classIdx,:]
         plot_cov_ellipse(sigma[label], mu[label])
-        plt.scatter(Xclass[:,0],Xclass[:,1],linewidths=1,s=25,color=colors[label],marker='o',alpha=0.75)
+        plt.scatter(Xclass[:,0],Xclass[:,1],linewidths=1,s=25,color=colors[label],marker='o',alpha=0.75,label=label)
         c += 1.
 
     plt.show()
